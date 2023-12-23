@@ -54,7 +54,6 @@ def process_set_version(message):
     user_version = message.text.strip()
     user_versions[user_id] = user_version
     bot.send_message(user_id, f"Версия Windows установлена: {user_version}")
-    # Добавляем возможность запросить подходящую версию Skype сразу после установки версии
     handle_skype_update(message)
 
 @bot.message_handler(commands=['выход'])
@@ -62,7 +61,6 @@ def handle_exit(message):
     user_id = message.chat.id
     bot.send_message(user_id, "Спасибо за то, что воспользовались нашими услугами! Ваш запрос завершен.\n"
                               f"Подписывайтесь на наш Telegram-канал: {CHANNEL_LINK}")
-    # Дополнительные действия по завершению работы с ботом, если необходимо
     bot.send_message(user_id, get_welcome_message())  # Отправляем приветственное сообщение
 
 if __name__ == "__main__":
