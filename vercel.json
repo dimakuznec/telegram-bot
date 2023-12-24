@@ -1,7 +1,7 @@
 {
     "functions": {
       "telegram bot/main.py": {
-        "runtime": "vercel-python@0.26.0"
+        "runtime": "vercel-python@33.0.1"
       }
     }
   }
