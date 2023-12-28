@@ -60,7 +60,7 @@ def process_set_version(message):
 def handle_exit(message):
     user_id = message.chat.id
     bot.send_message(user_id, "Спасибо за то, что воспользовались нашими услугами! Ваш запрос завершен.\n"
-                              f"Подписывайтесь на наш Telegram-канал: {CHANNEL_LINK}")
+    f"Подписывайтесь на наш Telegram-канал: {CHANNEL_LINK}")
     bot.send_message(user_id, get_welcome_message())  # Отправляем приветственное сообщение
 
 if __name__ == "__main__":
