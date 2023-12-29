@@ -56,7 +56,7 @@ def process_set_version(message):
     bot.send_message(user_id, f"Версия Windows установлена: {user_version}")
     handle_skype_update(message)
 
-@bot.message_handler(commands=['выход'])
+@bot.message_handler(commands=['exit', 'выход'])
 def handle_exit(message):
     user_id = message.chat.id
     bot.send_message(user_id, "Спасибо за то, что воспользовались нашими услугами! Ваш запрос завершен.\n"
