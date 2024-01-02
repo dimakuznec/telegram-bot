@@ -9,7 +9,7 @@
 	"editor.detectIndentation": true,
 	"editor.suggestSelection": "first",
 	"editor.multiCursorModifier": "ctrlCmd",
-	"window.zoomLevel": 0,
+	"window.zoomLevel": -1,
 
 	// Wrapping
 	"editor.wordWrap": "bounded",
@@ -48,7 +48,7 @@
 	"window.commandCenter": false,
 	"workbench.layoutControl.enabled": false,
 	"symbols.hidesExplorerArrows": false,
-	"workbench.iconTheme": "catppuccin-perfect-sequoia",
+	"workbench.iconTheme": "material-icon-theme",
 
 	// Cursor
 	"editor.cursorBlinking": "expand",
